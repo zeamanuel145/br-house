@@ -1,65 +1,104 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
+import { Search } from "lucide-react"
+import Image from "next/image"
+import { useState } from "react"
+import { motion, Variants } from "framer-motion"
+import { AboutSection } from "../components/about-section"
+import { ShowcaseSection } from "../components/showcase-section"
+import { RoomGallery } from "../components/room-gallery"
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.18,
+      delayChildren: 0.4,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: [0.215, 0.61, 0.355, 1] as const, // fixed with as const
+    },
+  },
+}
+
+export default function HomePage() {
+  const [searchQuery, setSearchQuery] = useState("")
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="relative min-h-screen bg-[#f8f8f6] overflow-hidden">
+      <div className="flex flex-col lg:flex-row min-h-screen">
+        {/* Left Content Section */}
+        <div className="relative z-10 w-full lg:w-[45%] flex flex-col justify-start px-8 md:px-12 lg:px-16 pt-8 md:pt-12 lg:pt-16 pb-8">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="space-y-0"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            {/* Headline */}
+            <motion.h1
+              variants={itemVariants}
+              className="font-serif text-[clamp(2.5rem,7vw,5rem)] font-normal tracking-[-0.01em] text-[#111111] leading-[1.05]"
+            >
+              <span className="block">DISCOVER THE SPACE</span>
+              <span className="block">YOU BELONG TO</span>
+            </motion.h1>
+
+            {/* Description */}
+            <motion.p
+              variants={itemVariants}
+              className="mt-8 md:mt-10 text-[#666666] text-sm leading-relaxed max-w-[300px]"
+            >
+              A new land for a new beginning. Designed for those who seek
+              harmony between space, style, and substance.
+            </motion.p>
+
+            {/* Search Bar */}
+            <motion.div variants={itemVariants} className="mt-6 md:mt-8 max-w-[240px]">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full py-2.5 pl-4 pr-10 bg-transparent border-b border-[#cccccc] focus:border-[#111111] outline-none transition-colors text-[#111111] text-sm placeholder:text-[#999999]"
+                />
+                <button
+                  type="button"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 p-1"
+                  aria-label="Search"
+                >
+                  <Search className="w-4 h-4 text-[#666666]" />
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </main>
-    </div>
-  );
+
+        {/* Right Image Section */}
+        <div className="relative w-full lg:w-[55%] min-h-[50vh] lg:min-h-screen">
+          <Image
+            src="/images/house-5.png"
+            alt="Modern multi-story residential building with balconies"
+            fill
+            className="object-cover object-center lg:object-left-top"
+            priority
+          />
+        </div>
+      </div>
+      <AboutSection />
+      <RoomGallery />
+      <ShowcaseSection />
+    </main>
+  )
 }

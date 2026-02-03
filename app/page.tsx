@@ -7,6 +7,8 @@ import { motion, Variants } from "framer-motion"
 import { AboutSection } from "../components/about-section"
 import { ShowcaseSection } from "../components/showcase-section"
 import { RoomGallery } from "../components/room-gallery"
+import {ContactSection} from "../components/contact-section"
+import { Footer } from "../components/footer"
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -99,6 +101,8 @@ export default function HomePage() {
       <AboutSection />
       <RoomGallery />
       <ShowcaseSection />
+      <ContactSection />
+       <Footer />
     </main>
   )
 }

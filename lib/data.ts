@@ -36,6 +36,9 @@ export const companyInfo = {
   galleryDescription: "Discover thoughtfully designed interiors where every detail reflects quality craftsmanship and timeless elegance.",
   showcaseTitle: "CRAFTED SPACES, READY TO BEGIN",
   showcaseDescription: "Discover unique living spaces designed to inspire — available now across cities and landscapes. Each project reflects our vision for thoughtful, timeless living.",
+  email: "hello@altaterra.com",
+  phone: "+1 (555) 123-4567",
+  address: "123 Design District, New York, NY 10001",
 }
 
 // Stats Data
@@ -66,7 +69,7 @@ export const stats: Stat[] = [
 export const rooms: Room[] = [
   {
     id: "bathroom-1",
-    image: "/images/rooms/bathroom-1.jpg",
+    image: "/images/rooms/18.png",
     title: "Master Bathroom",
     category: "Bathroom",
     description: "Luxurious spa-inspired bathroom with freestanding tub and marble finishes.",
@@ -76,7 +79,7 @@ export const rooms: Room[] = [
   },
   {
     id: "bathroom-2",
-    image: "/images/rooms/bathroom-2.jpg",
+    image: "/images/rooms/8.png",
     title: "En-Suite Bath",
     category: "Bathroom",
     description: "Modern double vanity bathroom with rain shower and LED mirrors.",
@@ -86,7 +89,7 @@ export const rooms: Room[] = [
   },
   {
     id: "bedroom-1",
-    image: "/images/rooms/bedroom-1.jpg",
+    image: "/images/rooms/10.png",
     title: "Master Suite",
     category: "Bedroom",
     description: "Expansive master bedroom with panoramic city views and walk-in closet.",
@@ -96,7 +99,7 @@ export const rooms: Room[] = [
   },
   {
     id: "bedroom-2",
-    image: "/images/rooms/bedroom-2.jpg",
+    image: "/images/rooms/3.png",
     title: "Mountain View Room",
     category: "Bedroom",
     description: "Serene bedroom retreat with breathtaking mountain vistas.",
@@ -106,7 +109,7 @@ export const rooms: Room[] = [
   },
   {
     id: "bedroom-3",
-    image: "/images/rooms/bedroom-3.jpg",
+    image: "/images/rooms/23.png",
     title: "Guest Bedroom",
     category: "Bedroom",
     description: "Elegant guest quarters with premium amenities and natural light.",
@@ -116,7 +119,7 @@ export const rooms: Room[] = [
   },
   {
     id: "balcony-1",
-    image: "/images/rooms/balcony-1.jpg",
+    image: "/images/rooms/13.png",
     title: "Sky Terrace",
     category: "Balcony",
     description: "Private outdoor space with stunning sunset views over the city.",
@@ -126,7 +129,7 @@ export const rooms: Room[] = [
   },
   {
     id: "balcony-2",
-    image: "/images/rooms/balcony-2.jpg",
+    image: "/images/rooms/22.png",
     title: "Ocean Terrace",
     category: "Balcony",
     description: "Expansive terrace perfect for entertaining with ocean panoramas.",
@@ -136,7 +139,7 @@ export const rooms: Room[] = [
   },
   {
     id: "kitchen-1",
-    image: "/images/rooms/kitchen-1.jpg",
+    image: "/images/rooms/30.png",
     title: "Gourmet Kitchen",
     category: "Kitchen",
     description: "Chef-inspired kitchen with marble island and premium appliances.",
@@ -146,7 +149,7 @@ export const rooms: Room[] = [
   },
   {
     id: "kitchen-2",
-    image: "/images/rooms/kitchen-2.jpg",
+    image: "/images/rooms/5.png",
     title: "Modern Kitchen",
     category: "Kitchen",
     description: "Contemporary culinary space with professional-grade range.",
@@ -156,7 +159,7 @@ export const rooms: Room[] = [
   },
   {
     id: "kitchen-3",
-    image: "/images/rooms/kitchen-3.jpg",
+    image: "/images/rooms/6.png",
     title: "Scandinavian Kitchen",
     category: "Kitchen",
     description: "Minimalist design with light wood and integrated appliances.",
@@ -166,7 +169,7 @@ export const rooms: Room[] = [
   },
   {
     id: "living-1",
-    image: "/images/rooms/living-1.jpg",
+    image: "/images/rooms/1.png",
     title: "Grand Living Room",
     category: "Living Room",
     description: "Spacious living area with fireplace and floor-to-ceiling windows.",
@@ -176,7 +179,7 @@ export const rooms: Room[] = [
   },
   {
     id: "living-2",
-    image: "/images/rooms/living-2.jpg",
+    image: "/images/rooms/12.png",
     title: "Garden Living",
     category: "Living Room",
     description: "Open-plan living with seamless indoor-outdoor connection.",
@@ -186,7 +189,7 @@ export const rooms: Room[] = [
   },
   {
     id: "living-3",
-    image: "/images/rooms/living-3.jpg",
+    image: "/images/rooms/2.png",
     title: "Penthouse Lounge",
     category: "Living Room",
     description: "Double-height ceiling with dramatic chandelier and marble accents.",
@@ -196,7 +199,7 @@ export const rooms: Room[] = [
   },
   {
     id: "dining-1",
-    image: "/images/rooms/dining-1.jpg",
+    image: "/images/rooms/14.png",
     title: "Formal Dining",
     category: "Dining Room",
     description: "Elegant dining space for memorable gatherings and entertaining.",
@@ -206,7 +209,7 @@ export const rooms: Room[] = [
   },
   {
     id: "study-1",
-    image: "/images/rooms/study-1.jpg",
+    image: "/images/rooms/14.png",
     title: "Private Study",
     category: "Study",
     description: "Sophisticated home office with built-in library shelving.",
@@ -222,7 +225,7 @@ export const projects: Project[] = [
     id: "aurora-vista",
     title: "AURORA VISTA",
     description: "In today's world, the concept of home transcends mere shelter. At Aurora Vista, each residence is thoughtfully designed to offer breathtaking panoramic views, blending natural light with modern elegance.",
-    image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=600&fit=crop",
+    image: "/images/rooms/13.png",
     imageAlt: "Cozy bedroom with mountain forest view through large windows",
     imagePosition: "left",
   },
@@ -230,7 +233,7 @@ export const projects: Project[] = [
     id: "houses-to-choose",
     title: "HOUSES TO CHOOSE FROM",
     description: "The vision behind Aurora Vista is to create more than just a house — it's about crafting a sanctuary that harmonizes with its surroundings. Expansive windows frame stunning vistas, while the architectural design seamlessly integrates luxury with nature.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+    image: "/images/rooms/42.png",
     imageAlt: "Modern minimalist kitchen with large windows overlooking snowy mountains",
     imagePosition: "right",
   },

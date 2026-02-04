@@ -2,23 +2,11 @@
 
 import React from "react"
 
-import { Mail, Phone, MapPin, ArrowRight, MessageCircle  } from "lucide-react"
-import { Button } from "../components/ui/button"
+import { Mail, Phone, MapPin, MessageCircle  } from "lucide-react"
 import { companyInfo } from "../lib/data"
-import { useState } from "react"
+
 
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-  }
 
   return (
     <section className="bg-[#f8f8f6] py-20 md:py-28">
@@ -28,7 +16,7 @@ export function ContactSection() {
           <div>
             <span className="text-sm text-[#666666] tracking-wide">Contact</span>
             <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] font-normal tracking-[-0.01em] text-[#111111] leading-[1.1] mt-4">
-              LET'S START A
+              LET&apos;S START A
               <br />
               CONVERSATION
             </h2>

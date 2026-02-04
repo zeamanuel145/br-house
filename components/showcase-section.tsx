@@ -40,7 +40,7 @@ export function ShowcaseSection() {
 
         {/* Projects */}
         <div className="mt-16 md:mt-20 lg:mt-24 space-y-16 md:space-y-20">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.title}
               className={`flex flex-col gap-8 md:gap-12 ${

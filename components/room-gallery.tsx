@@ -21,7 +21,7 @@ export function RoomGallery() {
           x: {
             repeat: Number.POSITIVE_INFINITY,
             repeatType: "loop",
-            duration: 60,
+            duration: 80,
             ease: "linear",
           },
         },

@@ -2,7 +2,7 @@
 
 import React from "react"
 
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import { Mail, Phone, MapPin, ArrowRight, MessageCircle  } from "lucide-react"
 import { Button } from "../components/ui/button"
 import { companyInfo } from "../lib/data"
 import { useState } from "react"
@@ -33,16 +33,13 @@ export function ContactSection() {
               CONVERSATION
             </h2>
           </div>
-          <p className="mt-6 lg:mt-0 text-[#666666] text-sm md:text-base leading-relaxed max-w-md">
-            Ready to find your perfect space? Reach out to our team and
-            let us help you discover the home you've been looking for.
-          </p>
+         
         </div>
 
         {/* Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-          {/* Contact Info */}
-          <div className="space-y-8">
+          {/* Contact Info */} 
+          <div className="space-y-8 ">
             {/* Email */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full border border-[#e0e0e0] flex items-center justify-center flex-shrink-0">
@@ -75,6 +72,25 @@ export function ContactSection() {
               </div>
             </div>
 
+            {/* WhatsApp */}
+                <div className="flex items-start gap-4">  
+              <div className="w-12 h-12 rounded-full border border-[#e0e0e0] flex items-center justify-center flex-shrink-0">
+                <MessageCircle className="w-5 h-5 text-[#111111]" />
+              </div>
+              <div>
+                <p className="text-sm text-[#666666] mb-1">WhatsApp</p>
+                <a
+                  href={`https://wa.me/${companyInfo.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#111111] text-lg hover:underline underline-offset-4"
+                >
+                  {companyInfo.whatsapp}
+                </a>
+              </div>
+            </div>
+
+
             {/* Address */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full border border-[#e0e0e0] flex items-center justify-center flex-shrink-0">
@@ -87,9 +103,10 @@ export function ContactSection() {
                 </p>
               </div>
             </div>
-
+            </div>
+            <div>
             {/* Office Hours */}
-            <div className="pt-6 border-t border-[#e0e0e0]">
+            <div className="pt-6 border-l border-[#e0e0e0] gap-6 lg:pl-8 h-full">
               <p className="text-sm text-[#666666] mb-3">Office Hours</p>
               <div className="space-y-1">
                 <p className="text-[#111111]">Monday - Friday: 9:00 AM - 6:00 PM</p>
@@ -98,63 +115,8 @@ export function ContactSection() {
               </div>
             </div>
           </div>
-
-          {/* Contact Form */}
-          <div className="bg-white p-8 md:p-10 rounded-2xl">
-            <h3 className="font-serif text-2xl text-[#111111] mb-6">Send us a message</h3>
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div>
-                <label htmlFor="name" className="block text-sm text-[#666666] mb-2">
-                  Your name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-[#f8f8f6] border-none rounded-lg text-[#111111] placeholder:text-[#999999] focus:outline-none focus:ring-2 focus:ring-[#111111]"
-                  placeholder="John Doe"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm text-[#666666] mb-2">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-[#f8f8f6] border-none rounded-lg text-[#111111] placeholder:text-[#999999] focus:outline-none focus:ring-2 focus:ring-[#111111]"
-                  placeholder="john@example.com"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm text-[#666666] mb-2">
-                  Your message
-                </label>
-                <textarea
-                  id="message"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={4}
-                  className="w-full px-4 py-3 bg-[#f8f8f6] border-none rounded-lg text-[#111111] placeholder:text-[#999999] focus:outline-none focus:ring-2 focus:ring-[#111111] resize-none"
-                  placeholder="Tell us about your dream home..."
-                  required
-                />
-              </div>
-              <Button
-                type="submit"
-                className="w-full bg-[#111111] text-white hover:bg-[#333333] rounded-full py-6 text-sm font-medium"
-              >
-                Send Message
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </form>
           </div>
-        </div>
+        
       </div>
     </section>
   )

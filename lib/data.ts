@@ -36,9 +36,10 @@ export const companyInfo = {
   galleryDescription: "Discover thoughtfully designed interiors where every detail reflects quality craftsmanship and timeless elegance.",
   showcaseTitle: "CRAFTED SPACES, READY TO BEGIN",
   showcaseDescription: "Discover unique living spaces designed to inspire — available now across cities and landscapes. Each project reflects our vision for thoughtful, timeless living.",
-  email: "hello@altaterra.com",
-  phone: "+1 (555) 123-4567",
-  address: "123 Design District, New York, NY 10001",
+  email: "habtegiorgis.brook@gmail.com",
+  phone: "+251 96 684 7745",
+  whatsapp: "251966847745",
+  address: "Jackros area",
 }
 
 // Stats Data

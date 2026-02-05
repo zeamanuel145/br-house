@@ -93,15 +93,7 @@ export function ContactSection() {
             </div>
             </div>
             <div>
-            {/* Office Hours */}
-            <div className="pt-6 border-l border-[#e0e0e0] gap-6 lg:pl-8 h-full">
-              <p className="text-sm text-[#666666] mb-3">Office Hours</p>
-              <div className="space-y-1">
-                <p className="text-[#111111]">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-[#111111]">Saturday: 10:00 AM - 4:00 PM</p>
-                <p className="text-[#666666]">Sunday: Closed</p>
-              </div>
-            </div>
+            
           </div>
           </div>
         

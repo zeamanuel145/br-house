@@ -63,7 +63,7 @@ export default async function RoomPage({ params }: { params: Promise<{ id: strin
 
             <div className="flex items-center gap-4 mb-10">
               <span className="text-sm text-[#999999]">Area</span>
-              <span className="text-lg font-medium text-[#111111]">{room.sqft}</span>
+              
             </div>
 
             {/* Features */}
@@ -84,14 +84,7 @@ export default async function RoomPage({ params }: { params: Promise<{ id: strin
             </div>
 
             {/* CTA */}
-            <div className="flex gap-4">
-              <Button className="bg-[#111111] hover:bg-[#333333] text-white px-8 py-6 rounded-full text-sm">
-                Schedule a Tour
-              </Button>
-              <Button variant="outline" className="border-[#111111] text-[#111111] px-8 py-6 rounded-full text-sm bg-transparent">
-                Contact Agent
-              </Button>
-            </div>
+           
           </div>
         </div>
       </div>

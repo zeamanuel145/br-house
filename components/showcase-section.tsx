@@ -33,7 +33,7 @@ export function ShowcaseSection() {
               variant="outline"
               className="rounded-full px-6 py-2 border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white transition-colors bg-transparent"
             >
-              Check all project
+              Check the house
             </Button>
           </div>
         </div>
@@ -70,15 +70,7 @@ export function ShowcaseSection() {
                 </p>
 
                 {/* View project button */}
-                <button
-                  type="button"
-                  className="mt-6 flex items-center gap-2 text-[#111111] text-sm font-medium group"
-                >
-                  <span className="w-8 h-8 rounded-full border border-[#cccccc] flex items-center justify-center group-hover:border-[#111111] transition-colors">
-                    <ArrowRight className="w-4 h-4" />
-                  </span>
-                  <span>View project</span>
-                </button>
+                
               </div>
             </div>
           ))}

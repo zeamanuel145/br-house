@@ -6,7 +6,6 @@ export interface Room {
   category: string
   description: string
   fullDescription: string
-  sqft: string
   features: string[]
 }
 
@@ -30,7 +29,7 @@ export const companyInfo = {
   name: "Altaterra",
   tagline: "DISCOVER THE SPACE YOU BELONG TO",
   description: "A new land for a new beginning. Designed for those who seek harmony between space, style, and substance.",
-  aboutTitle: "OUR STORY BEGINS WITH THE LAND",
+  aboutTitle: "A PLACE DESIGNED FOR ELEVATED LIVING",
   aboutDescription: "Altaterra was founded on a simple belief — that where you live should be in harmony with how you live. From our first developments rooted in natural surroundings to our growing presence in modern urban spaces, we've stayed true to our mission: crafting spaces that feel grounded, thoughtful, and timeless.",
   galleryTitle: "EXPLORE OUR LIVING SPACES",
   galleryDescription: "Discover thoughtfully designed interiors where every detail reflects quality craftsmanship and timeless elegance.",
@@ -45,24 +44,28 @@ export const companyInfo = {
 // Stats Data
 export const stats: Stat[] = [
   {
-    value: "10+",
-    label: "Cities",
-    description: "where Altaterra has helped shape modern living",
+    value: "G+1",
+    label: "Duplex",
+    description:
+      "4 bedrooms · 4 bathrooms · 2 master suites · 2 large bedrooms · maid room",
   },
   {
-    value: "15+",
-    label: "Years",
-    description: "of Experience in real estate development",
+    value: "2",
+    label: "Bedroom Apartments",
+    description:
+      "Two spacious units with master suite, large bedroom, maid room · 3 bathrooms",
   },
   {
-    value: "80%",
-    label: "Green Integration",
-    description: "across all developments",
+    value: "Lifestyle",
+    label: "Comfort",
+    description:
+      "High ceilings, airy layouts, natural light, wide balconies, luxury finishes, modern kitchens, built-in storage",
   },
   {
-    value: "87%",
-    label: "Customer satisfaction",
-    description: "across all property handovers",
+    value: "110 m²",
+    label: "Rooftop & Utilities",
+    description:
+      "Rooftop terrace with gym/lounge, backup power, high-speed internet, 20,000L water reservoir, secure parking, CCTV-ready",
   },
 ]
 
@@ -73,9 +76,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/18.png",
     title: "Master Bathroom",
     category: "Bathroom",
-    description: "Luxurious spa-inspired bathroom with freestanding tub and marble finishes.",
-    fullDescription: "Luxurious spa-inspired bathroom with freestanding tub and marble finishes. Experience tranquility with premium fixtures, heated floors, and ambient lighting designed to create your personal sanctuary.",
-    sqft: "120 sq ft",
+    description: "Luxury matte-finish bathroom designed for everyday comfort.",
+    fullDescription:
+      "Luxury matte-finish bathroom designed for everyday comfort, featuring high-quality finishes and a clean, modern layout suitable for long-term living.",
     features: ["Freestanding Soaking Tub", "Heated Marble Floors", "Rain Shower", "Double Vanity", "LED Mirrors"],
   },
   {
@@ -83,9 +86,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/8.png",
     title: "En-Suite Bath",
     category: "Bathroom",
-    description: "Modern double vanity bathroom with rain shower and LED mirrors.",
-    fullDescription: "Modern double vanity bathroom with rain shower and LED mirrors. Clean lines meet functional elegance in this thoughtfully designed space.",
-    sqft: "95 sq ft",
+    description: "Modern bathroom with premium fixtures and practical layout.",
+    fullDescription:
+      "Modern bathroom with premium fixtures, designed for functionality, durability, and comfort in a long-term residential setting.",
     features: ["Walk-in Shower", "Smart Mirrors", "Underfloor Heating", "Premium Fixtures"],
   },
   {
@@ -93,9 +96,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/10.png",
     title: "Master Suite",
     category: "Bedroom",
-    description: "Expansive master bedroom with panoramic city views and walk-in closet.",
-    fullDescription: "Expansive master bedroom with panoramic city views and walk-in closet. Floor-to-ceiling windows flood the space with natural light while automated blinds ensure privacy when desired.",
-    sqft: "450 sq ft",
+    description: "Spacious master suite with abundant natural light and built-in storage.",
+    fullDescription:
+      "Spacious master suite featuring high ceilings, abundant natural light, and built-in closets, designed for privacy and comfort.",
     features: ["City Views", "Walk-in Closet", "Smart Home Controls", "Blackout Blinds", "En-Suite Bathroom"],
   },
   {
@@ -103,9 +106,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/3.png",
     title: "Mountain View Room",
     category: "Bedroom",
-    description: "Serene bedroom retreat with breathtaking mountain vistas.",
-    fullDescription: "Serene bedroom retreat with breathtaking mountain vistas. Wake up to nature's grandeur through expansive windows that frame the landscape like living art.",
-    sqft: "320 sq ft",
+    description: "Large bedroom with airy layout and wide balcony access.",
+    fullDescription:
+      "Large bedroom with an airy layout, wide balcony access, and natural light, offering a calm and comfortable living environment.",
     features: ["Panoramic Views", "Private Balcony", "Custom Closets", "Reading Nook"],
   },
   {
@@ -113,9 +116,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/23.png",
     title: "Guest Bedroom",
     category: "Bedroom",
-    description: "Elegant guest quarters with premium amenities and natural light.",
-    fullDescription: "Elegant guest quarters with premium amenities and natural light. Designed to make visitors feel at home with hotel-quality comfort.",
-    sqft: "280 sq ft",
+    description: "Comfortable guest bedroom ideal for family or long-term stays.",
+    fullDescription:
+      "Comfortable guest bedroom designed with practical space planning, natural light, and quality finishes for everyday use.",
     features: ["Queen Bed", "Private Bath", "Work Desk", "Ample Storage"],
   },
   {
@@ -123,9 +126,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/13.png",
     title: "Sky Terrace",
     category: "Balcony",
-    description: "Private outdoor space with stunning sunset views over the city.",
-    fullDescription: "Private outdoor space with stunning sunset views over the city. Perfect for morning coffee or evening relaxation under the stars.",
-    sqft: "180 sq ft",
+    description: "Wide balcony offering outdoor relaxation and fresh air.",
+    fullDescription:
+      "Wide balcony designed for outdoor relaxation, providing fresh air, natural light, and a quiet residential atmosphere.",
     features: ["Lounge Seating", "Built-in Planters", "Glass Railings", "Weather Protection"],
   },
   {
@@ -133,9 +136,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/22.png",
     title: "Ocean Terrace",
     category: "Balcony",
-    description: "Expansive terrace perfect for entertaining with ocean panoramas.",
-    fullDescription: "Expansive terrace perfect for entertaining with ocean panoramas. Host gatherings or enjoy solitude with the rhythm of the waves as your soundtrack.",
-    sqft: "250 sq ft",
+    description: "Spacious balcony suitable for seating and everyday use.",
+    fullDescription:
+      "Spacious balcony suitable for seating and light outdoor activities, enhancing the indoor-outdoor living experience.",
     features: ["Outdoor Dining", "BBQ Area", "String Lighting", "Ocean Views"],
   },
   {
@@ -143,9 +146,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/30.png",
     title: "Gourmet Kitchen",
     category: "Kitchen",
-    description: "Chef-inspired kitchen with marble island and premium appliances.",
-    fullDescription: "Chef-inspired kitchen with marble island and premium appliances. Every detail designed for both serious cooking and casual entertaining.",
-    sqft: "380 sq ft",
+    description: "Modern kitchen with appliance hookups and efficient layout.",
+    fullDescription:
+      "Modern kitchen designed with appliance hookups, quality finishes, and a practical layout for daily cooking and long-term use.",
     features: ["Marble Counters", "Sub-Zero Fridge", "Wine Storage", "Breakfast Bar"],
   },
   {
@@ -153,9 +156,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/5.png",
     title: "Modern Kitchen",
     category: "Kitchen",
-    description: "Contemporary culinary space with professional-grade range.",
-    fullDescription: "Contemporary culinary space with professional-grade range. Dark wood cabinets and warm lighting create an inviting atmosphere for culinary creativity.",
-    sqft: "420 sq ft",
+    description: "Contemporary kitchen with durable finishes and ample storage.",
+    fullDescription:
+      "Contemporary kitchen featuring durable finishes, ample storage, and a functional design suited for modern living.",
     features: ["Professional Range", "Custom Cabinetry", "Butler's Pantry", "Smart Appliances"],
   },
   {
@@ -163,9 +166,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/6.png",
     title: "Scandinavian Kitchen",
     category: "Kitchen",
-    description: "Minimalist design with light wood and integrated appliances.",
-    fullDescription: "Minimalist design with light wood and integrated appliances. Clean aesthetics meet practical function in this serene cooking space.",
-    sqft: "300 sq ft",
+    description: "Clean, minimalist kitchen focused on practicality and comfort.",
+    fullDescription:
+      "Minimalist kitchen emphasizing practicality, natural light, and efficient use of space for everyday living.",
     features: ["Hidden Storage", "Integrated Appliances", "Natural Materials", "Open Shelving"],
   },
   {
@@ -173,9 +176,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/1.png",
     title: "Grand Living Room",
     category: "Living Room",
-    description: "Spacious living area with fireplace and floor-to-ceiling windows.",
-    fullDescription: "Spacious living area with fireplace and floor-to-ceiling windows. The heart of the home designed for both intimate gatherings and grand entertaining.",
-    sqft: "650 sq ft",
+    description: "Bright living space with high ceilings and natural light.",
+    fullDescription:
+      "Bright living area featuring high ceilings, airy layouts, and abundant natural light, ideal for relaxation and family time.",
     features: ["Gas Fireplace", "Built-in Media", "City Views", "Custom Millwork"],
   },
   {
@@ -183,9 +186,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/12.png",
     title: "Garden Living",
     category: "Living Room",
-    description: "Open-plan living with seamless indoor-outdoor connection.",
-    fullDescription: "Open-plan living with seamless indoor-outdoor connection. Sliding glass walls blur the boundary between interior comfort and natural beauty.",
-    sqft: "520 sq ft",
+    description: "Open living area designed for comfort and daily use.",
+    fullDescription:
+      "Open living area with a comfortable layout, natural light, and quality finishes suitable for long-term residence.",
     features: ["Garden Access", "Sliding Glass Walls", "Wood Floors", "Natural Light"],
   },
   {
@@ -193,9 +196,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/2.png",
     title: "Penthouse Lounge",
     category: "Living Room",
-    description: "Double-height ceiling with dramatic chandelier and marble accents.",
-    fullDescription: "Double-height ceiling with dramatic chandelier and marble accents. A statement space that embodies luxury living at its finest.",
-    sqft: "800 sq ft",
+    description: "Spacious living area with refined modern finishes.",
+    fullDescription:
+      "Spacious living area finished with high-quality materials, offering a calm and elegant environment for everyday living.",
     features: ["Double Height Ceiling", "Designer Chandelier", "Marble Accents", "Premium Finishes"],
   },
   {
@@ -203,9 +206,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/14.png",
     title: "Formal Dining",
     category: "Dining Room",
-    description: "Elegant dining space for memorable gatherings and entertaining.",
-    fullDescription: "Elegant dining space for memorable gatherings and entertaining. Statement lighting and refined finishes set the stage for unforgettable meals.",
-    sqft: "280 sq ft",
+    description: "Functional dining area designed for everyday family use.",
+    fullDescription:
+      "Functional dining space with a practical layout, designed for comfortable daily meals and gatherings.",
     features: ["Seating for 10", "Statement Lighting", "Built-in Buffet", "Wine Display"],
   },
   {
@@ -213,9 +216,9 @@ export const rooms: Room[] = [
     image: "/images/rooms/14.png",
     title: "Private Study",
     category: "Study",
-    description: "Sophisticated home office with built-in library shelving.",
-    fullDescription: "Sophisticated home office with built-in library shelving. A productive sanctuary for focused work and creative thinking.",
-    sqft: "200 sq ft",
+    description: "Quiet study space suitable for work or personal use.",
+    fullDescription:
+      "Quiet study area designed to support focused work, reading, or personal activities in a peaceful home environment.",
     features: ["Built-in Shelving", "Natural Light", "Ergonomic Design", "Private Entry"],
   },
 ]
@@ -224,23 +227,27 @@ export const rooms: Room[] = [
 export const projects: Project[] = [
   {
     id: "aurora-vista",
-    title: "AURORA VISTA",
-    description: "In today's world, the concept of home transcends mere shelter. At Aurora Vista, each residence is thoughtfully designed to offer breathtaking panoramic views, blending natural light with modern elegance.",
+    title: "LIFESTYLE & COMFORT",
+    description:
+      "Newly built, secure residences near the Jackros area designed for comfortable long-term expat living, located just 10–15 minutes from Bole.",
     image: "/images/rooms/13.png",
-    imageAlt: "Cozy bedroom with mountain forest view through large windows",
+    imageAlt: "Modern residential building in a quiet neighborhood",
     imagePosition: "left",
   },
   {
     id: "houses-to-choose",
-    title: "HOUSES TO CHOOSE FROM",
-    description: "The vision behind Aurora Vista is to create more than just a house — it's about crafting a sanctuary that harmonizes with its surroundings. Expansive windows frame stunning vistas, while the architectural design seamlessly integrates luxury with nature.",
+    title: "ROOFTOP, SECURITY & UTILITIES",
+    description:
+      "G+1 duplexes and spacious 2-bedroom apartments featuring high ceilings, natural light, modern kitchens, luxury bathrooms, rooftop terrace, reliable utilities, and move-in-ready quality construction.",
     image: "/images/rooms/42.png",
-    imageAlt: "Modern minimalist kitchen with large windows overlooking snowy mountains",
+    imageAlt: "Interior view showing modern finishes and natural light",
     imagePosition: "right",
   },
 ]
 
-// Helper functions
+
+
+
 export function getRoomById(id: string): Room | undefined {
   return rooms.find((room) => room.id === id)
 }

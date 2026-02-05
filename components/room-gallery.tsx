@@ -105,7 +105,7 @@ export function RoomGallery() {
                       {room.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-white/70">{room.sqft}</span>
+                    
                       <span className="text-sm text-white font-medium flex items-center gap-1">
                         View Details
                         <svg

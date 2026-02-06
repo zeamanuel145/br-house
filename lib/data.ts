@@ -30,7 +30,7 @@ export const companyInfo = {
   tagline: "DISCOVER THE SPACE YOU BELONG TO",
   description: "A new land for a new beginning. Designed for those who seek harmony between space, style, and substance.",
   aboutTitle: "A PLACE DESIGNED FOR ELEVATED LIVING",
-  aboutDescription: "Altaterra was founded on a simple belief — that where you live should be in harmony with how you live. From our first developments rooted in natural surroundings to our growing presence in modern urban spaces, we've stayed true to our mission: crafting spaces that feel grounded, thoughtful, and timeless.",
+  aboutDescription: "This newly built residential property near Bole, in the Jackros area, is designed with long-term expat living in mind. The building offers a carefully planned mix of a spacious G+1 duplex and two generously sized two-bedroom apartments, each approximately 150 m², featuring open layouts, high ceilings, and abundant natural light. Thoughtful attention has been given to comfort and practicality, with wide balconies, luxury matte-finish bathrooms, modern kitchens with appliance hookups, and ample built-in storage throughout. Residents benefit from a 110 m² rooftop terrace with shared gym and lounge space, dedicated internet lines, reliable backup power, and a large water reservoir to ensure uninterrupted daily living. Secure parking and CCTV infrastructure readiness further enhance peace of mind, all within a quiet residential setting just 10–15 minutes from Bole.",
   galleryTitle: "EXPLORE OUR LIVING SPACES",
   galleryDescription: "Discover thoughtfully designed interiors where every detail reflects quality craftsmanship and timeless elegance.",
   showcaseTitle: "CRAFTED SPACES, READY TO BEGIN",
